@@ -320,3 +320,39 @@ int main() {
 ```
 
 <hr>
+
+***Format Specifiers in C***
+
+| Format Specifiers	|		Type of Output		|
+| :---    | 	---: |							
+|	`%d` or `%i` 	|		*Signed Decimal Integer or Signed Integer*		|		
+|	`%u`		|			*Short Unsigned Integer*			|			
+|	`%ld` 		|			*Long Decimal Integer*			|		
+|	`%f` 		|			*Signed Float*			|		
+|	`%lf` 		|			*Double*				|			
+|	`%e` or `%E` 		|		*Mantissa Exponent*					|		
+|	`%g`		|			*Exact Precision*					|		
+|	`%lf`		|			*Long Double*					|		
+|	`%p` 		|			*Printing Memory Address in Hexadecimal Form*	|		
+|	`%c`		|			*Signed Character*				|		
+|	`%s` 		|			*String or Sequence of Character(s)*		|		
+|	`%o` 		|			*Octal Integer*					|		
+|	`%x` or `%X`		|		*Hexadecimal Integer*					|		
+
+**Attention**: `%c`, `%d` are usually frequently inter-used because of ASCII.
+
+Specific Examples:
+```C
+#include <stdio.h>
+int main() {
+	float a = 12.5;
+	float b = 3;
+	float c = 3.8;
+	printf("The floating-point of a is: %e\n", a);		// The floating-point of a is: 1.250000e+01
+	printf("The floating point of b is: %f\n", b);		// The floating point of b is: 3.000000
+	printf("The floating point of c is: %g", c);		// The floating point of c is: 3.8  
+	return 0;
+}
+```
+<hr>
+
