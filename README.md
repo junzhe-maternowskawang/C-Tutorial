@@ -162,7 +162,7 @@ The memory size of the basic data types may **CHANGE** according to 32 or 64-bit
 | Logical AND		|	`&&` |
 | Logical OR		|	`ǀǀ` |
 | Conditional		|	`? :` |
-| Assignment		|	`=`   `+=`   `-=`  `*=`   `/=`   `%=`   `>>=`   `<<=`   `&=`   `|=`   `^=` |
+| Assignment		|	`=`   `+=`   `-=`  `*=`   `/=`   `%=`   `>>=`   `<<=`   `&=`   `ǀ=`   `^=` |
 | Comma			| 	`,` |
 
 
