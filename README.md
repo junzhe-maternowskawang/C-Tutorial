@@ -26,7 +26,7 @@ The compilation process can be divided into four steps, i.e.,
 
 	source code -> [Preprocessor] -> expanded code  -> [Compiler] -> assembly code  -> [Assembler] -> object code -> [Linker] with other object files and libraries -> executable code
 	
-	hello.c     -> [Preprocessor] -> hello.i        -> [compiler] -> hello.s        -> [Assembler] -> hello.obj   -> [Linker] -> hello.exe -> [Loader] -> execution
+	hello.c     -> [Preprocessor] -> hello.i        -> [Compiler] -> hello.s        -> [Assembler] -> hello.obj   -> [Linker] -> hello.exe -> [Loader] -> execution
 <hr>
 
 
@@ -147,23 +147,23 @@ The memory size of the basic data types may **CHANGE** according to 32 or 64-bit
 
 ***C Operators***
 
-| Categories			| Operators |
-| :---    		| ---: |
-| Postfix| 				`()`   `[]`  ` ->`  ` .`  ` ++ ` ` --` |
-| Unary|				`+`   `-`   `!`   `~ `  `++`   `--`   `&`   `data_type*`   `sizeof`  |
-| Multiplicative|			`*`   `/`  ` %` |
-| Additive|				`+`   `-` |
-| Shift|				`<<`   `>>` |
-| Relational|				`<`   `>`   `<=`   `=>` |
-| Equality	|			`==`   `!=` |
-|Bitwise AND|			`&` |
-Bitwise OR	|		`|`		 |
-|Bitwise XOR		|	`^` |
-|Logical AND	|		`&&` |
-|Logical OR	|		`||` |
-|Conditional		|	`? :` |
-|Assignment		|	`=`   `+=`   `-=`  `*=`   `/=`   `%=`   `>>=`   `<<=`   `&=`   `|=`   `^=` |
-|Comma				| `,` |
+| Categories		| Operators 		|
+| :---    		| 			---: |
+| Postfix		| 	`()`   `[]`  ` ->`  ` .`  ` ++ ` ` --` |
+| Unary			|	`+`   `-`   `!`   `~ `  `++`   `--`   `&`   `data_type*`   `sizeof`  |
+| Multiplicative	|	`*`   `/`  ` %` |
+| Additive		|	`+`   `-` |
+| Shift			|	`<<`   `>>` |
+| Relational		|	`<`   `>`   `<=`   `=>` |
+| Equality		|	`==`   `!=` |
+| Bitwise AND		|	`&` |
+| Bitwise OR		|	`ǀ` |
+| Bitwise XOR		|	`^` |
+| Logical AND		|	`&&` |
+| Logical OR		|	`ǀǀ` |
+| Conditional		|	`? :` |
+| Assignment		|	`=`   `+=`   `-=`  `*=`   `/=`   `%=`   `>>=`   `<<=`   `&=`   `|=`   `^=` |
+| Comma			| 	`,` |
 
 
 For complement operator `~` is the `1's complement`.
