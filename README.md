@@ -87,10 +87,10 @@ char ch = 'A';
 >- Global Variable
 >- Static Variable
 >- Automatic Variable
-	 >>All variables in C that are declared inside the block, are automatic variables *by default*.  We can also explicitly declare an automatic variable using `auto` keyword.	
+>>All variables in C that are declared inside the block, are automatic variables *by default*.  We can also explicitly declare an automatic variable using `auto` keyword.	
 >- External Variable
-	>>External variables are also a part of global variables.
-	>>We can share a variable in multiple C files by using an external variable.
+>>External variables are also a part of global variables.
+>>We can share a variable in multiple C files by using an external variable.
 	
 >Examples:
 
@@ -208,8 +208,8 @@ int main(int argc, char** argv) {
 >-	1. 'const' keyword
 
 ``` C
-	const float PI = 3.14;
-	printf("The value of PI is: %f", PI);
+const float PI = 3.14;
+printf("The value of PI is: %f", PI);
 ```
 
 >-	2. '#define' preprocessor
