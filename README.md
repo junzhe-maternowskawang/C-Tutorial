@@ -113,13 +113,13 @@ extern int external_variable = 1000;
 
 > Data Types in C
 
-``` C
-Types				Data Types
-1. Basic Data Type		int, char, float, double
-2. Derived Data Type		array, pointer, struct, union
-3. Enumeration Data Type	enum
-4. Void Data Type		void
-```
+|Types					|	Data Types|
+| :---    |     	---: |
+|*Basic Data Type*	|		`int` `char` `float` `double`
+|*Derived Data Type*	|	`array` `pointer` `struct` `union`
+|*Enumeration Data Type*|	`enum`
+|*Void Data Type*|			`void`
+
 > Basic Data Types
 The memory size of the basic data types may **CHANGE** according to 32 or 64-bit operating system.
 
@@ -471,4 +471,92 @@ int main(int argc, char **argv) {
 	return 0;
 }
 ```
+
+<hr>
+
+***C BREAK & CONTINUE STATEMENT***
+
+>For `break`: 
+>>it only breaks the inner loop in nested loop situation.
+
+>For `continue`: 
+>>it skips the lines of code after it.
+
+<hr>
+
+***Type Casting in C***
+
+> Syntax: 
+		(data_type) value;
+
+> Examples:
+ 
+```C
+int without_type_casting = 9 / 4;
+float with_type_casting = (float) 9/4;
+printf("9/4 without type casting: %d\n", without_type_casting);		// 9/4 without type casting: 2
+printf("9/4 with type casting: %f\n", with_type_casting);		// 9/4 without type casting: 2.250000
+```
+
+	
+<hr>
+
+***Functions in C***
+
+> Syntax:
+
+```C
+return_type function_name(data_type parameter ...) {
+	// TODO
+}
+```
+	
+> Examples:
+
+```C
+#include <stdio.h>
+void print1(int);					// declare first later define.
+void print2(int x) { printf("print2: %d\n", x); }	// declare and define.
+int main() {
+	int x = 100;
+	print1(x);
+	print2(x);
+	return 0;
+}
+void print1(int x) { printf("print1: %d\n", x); }
+```
+
+<hr>
+
+***Types of functions:***
+
+> 1. library functions:
+		are the functions which are declared in the C header files such as scanf(), printf() etc.
+		Position in Linux:	/use/lib/...
+			
+> 2. user-defined functions:
+		are the functions which are created by the C programmer.
+
+<hr>
+
+***Frequently used C header files:***
+|Header File| Description |
+|:--|:--|
+|	`stdio.h`	| *standard input/output header file.* |
+|`conio.h`		| *console input/output header file.*|
+| `string.h`		| *contains all string related library functions like gets(), puts(), etc.*|
+|	`stdlib.h`		| *contains all the general library functions like malloc(), calloc(), exit(), etc.*|
+| `math.h` 		| *math header file.*|
+| `time.h` 		| *contains all the time-related functions.*|
+|`ctype.h` 		| *contains all character handling functions.*|
+| `stdarg.h` 		| *variable argument functions are defined in this header file.*|
+| `signal.h` 		| *all the signal handling functions.*|
+| `setjmp.h` 	| *all the jump functions.* |
+|`locale.h` 		| *locale functions.* |
+|`errno.h` 		| *error handling functions.* |
+|`assert.h` | *diagnostics functions.* |
+
+
+<hr>
+
 
