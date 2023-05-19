@@ -354,5 +354,121 @@ int main() {
 	return 0;
 }
 ```
+
 <hr>
+
+***C IF ELSE STATEMENT***
+
+> Syntax:
+
+```C
+if(condition1) {
+	// ...
+} else if(condition2) {
+	// ...
+} else if(condition3) {
+	// ...
+} else {
+	// ...
+}
+```
+	
+<hr>
+
+***C SWITCH STATEMENT***
+
+> Syntax:
+```C
+switch(expression) {
+	case value1:
+		// ...
+		break;
+	case value2:
+		// ...
+		break;
+	case value3:
+		// ...
+		break; 
+	case valueN:
+		// ...
+		break;
+	default:
+		// ...
+}
+```
+	
+<hr>
+
+***C LOOPS***
+
+ - `do ... while`
+ 
+```C
+do {
+	...
+} while(condition);
+```
+ - `while`
+```C
+while(condition) {
+	...
+}
+```
+ - `for`
+```C
+for(; ;) {
+	...
+}
+```
+<hr>
+
+***`goto` Statement in C***
+
+ - Jump to a label
+
+```C
+#include <stdio.h>
+int ret() {
+	static int count = 0;
+	count++;
+	return count;
+}
+int main() {
+jump_back:
+	printf("jump back\n");
+	if(ret() < 10) {
+		goto jump_back;
+	} else {
+		goto jump_forward;
+	}
+	printf("This code will not be executed.\n");
+jump_forward:
+	printf("jump forward\n");
+	return 0;
+}
+```
+
+ - Storing the address of a label
+```C
+void *ptr = &&jump;
+jump:
+	printf("hi\n");
+	goto *ptr;
+```
+ - Jump / Branch Table in C
+```C
+#include <stdio.h>
+#include <stdlib.h>
+typedef void (*Handler) (void);
+void func0(void) { printf("0\n"); }
+void func1(void) { printf("1\n"); }
+void func2(void) { printf("2\n"); }
+void func3(void) { printf("3\n"); }
+Handler jump_table[4] = {func0, func1, func2, func3};
+int main(int argc, char **argv) {
+	int value = atoi(argv[1]) % 4;
+	jump_table[value]();
+	return 0;
+}
+```
 
